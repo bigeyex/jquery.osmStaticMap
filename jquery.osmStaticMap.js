@@ -160,6 +160,13 @@ SOFTWARE.
                         drawCircle(ct, color, x, y);
                     }
                 }
+
+                // draw copyright notice
+                ct.font = "bold 10px sans-serif";
+                ct.textAlign = "right";
+                ct.textBaseline = "bottom";
+                ct.fillStyle = "#999999";
+                ct.fillText(opts.copyrightNotice, canvasWidth-3, canvasHeight-3);
             };
 
             // 4. draw osm copyright notice
@@ -183,6 +190,7 @@ SOFTWARE.
         margin: 10,         // minimum margin at the border of the map
         circleRadius: 5,    // radius of the circle marker
         circleStroleLineWidth: 1,
+        copyrightNotice: "(c)OpenStreetMap Contributors",
         circleStrokeStyle: '#333333'
     };
 
