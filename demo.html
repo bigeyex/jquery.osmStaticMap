@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <title>osm Static Map Jquery Plugin</title>
+</head>
+
+
+
+<body>
+    <div>
+        <canvas id="map-canvas"></canvas>
+    </div>
+
+    <div>
+        <canvas id="map-canvas2" style="margin-top:20px;" width="400"></canvas>
+    </div>
+
+    <div>
+        <pre>
+    code:
+    $('#map-canvas').osmStaticMap({
+        markers: [{
+            color: 'red',
+            points: [
+                        {lon: -71.08454704284668,lat: 42.364251817286835},
+                        {lon: -71.10222816467285,lat: 42.35790967440147}
+                    ]
+        }]
+    });
+    $('#map-canvas2').osmStaticMap({
+        markers: [{
+            color: 'green',
+            points: [
+                        {lon: -71.08454704284668,lat: 42.364251817286835}
+                    ]
+        }]
+    });
+        </pre>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="jquery.osmStaticMap.js"></script>
+    <script>
+
+    $('#map-canvas').osmStaticMap({
+        markers: [{
+            color: 'red',
+            points: [
+                        {lon: -71.08454704284668,lat: 42.364251817286835},
+                        {lon: -71.10222816467285,lat: 42.35790967440147}
+                    ]
+        }]
+    });
+    $('#map-canvas2').osmStaticMap({
+        markers: [{
+            color: 'green',
+            points: [
+                        {lon: -71.08454704284668,lat: 42.364251817286835}
+                    ]
+        }]
+    });
+    </script>
+</body>
+
+
+</html>
